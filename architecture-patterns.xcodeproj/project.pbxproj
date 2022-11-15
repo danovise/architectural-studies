@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8431BE8A2924117B0048396D /* VIPERViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431BE892924117B0048396D /* VIPERViewController.swift */; };
+		8431BE8C2924118A0048396D /* VIPERPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431BE8B2924118A0048396D /* VIPERPresenter.swift */; };
+		8431BE8E2924119A0048396D /* VIPERInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431BE8D2924119A0048396D /* VIPERInteractor.swift */; };
+		8431BE90292411BF0048396D /* VIPERRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431BE8F292411BF0048396D /* VIPERRouter.swift */; };
+		8431BE92292411D00048396D /* VIPERModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431BE91292411D00048396D /* VIPERModuleAssembly.swift */; };
 		848CA890291FD2A2003CEEAB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 848CA88F291FD2A2003CEEAB /* SnapKit */; };
 		848CA893291FD2E3003CEEAB /* PincodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CA892291FD2E3003CEEAB /* PincodeService.swift */; };
 		848CA896292108C4003CEEAB /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CA895292108C4003CEEAB /* MVPViewController.swift */; };
@@ -23,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8431BE892924117B0048396D /* VIPERViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERViewController.swift; sourceTree = "<group>"; };
+		8431BE8B2924118A0048396D /* VIPERPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERPresenter.swift; sourceTree = "<group>"; };
+		8431BE8D2924119A0048396D /* VIPERInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERInteractor.swift; sourceTree = "<group>"; };
+		8431BE8F292411BF0048396D /* VIPERRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERRouter.swift; sourceTree = "<group>"; };
+		8431BE91292411D00048396D /* VIPERModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERModuleAssembly.swift; sourceTree = "<group>"; };
 		848CA892291FD2E3003CEEAB /* PincodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PincodeService.swift; sourceTree = "<group>"; };
 		848CA895292108C4003CEEAB /* MVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
 		848CA897292108E0003CEEAB /* MVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresenter.swift; sourceTree = "<group>"; };
@@ -51,6 +61,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8431BE882924114A0048396D /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				8431BE892924117B0048396D /* VIPERViewController.swift */,
+				8431BE8B2924118A0048396D /* VIPERPresenter.swift */,
+				8431BE8D2924119A0048396D /* VIPERInteractor.swift */,
+				8431BE8F292411BF0048396D /* VIPERRouter.swift */,
+				8431BE91292411D00048396D /* VIPERModuleAssembly.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
 		848CA88C291FD1A2003CEEAB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +143,7 @@
 				848CA88D291FD1C4003CEEAB /* MVC */,
 				848CA894292108A0003CEEAB /* MVP */,
 				848CA8A629228C15003CEEAB /* MVVM */,
+				8431BE882924114A0048396D /* VIPER */,
 				848CA88C291FD1A2003CEEAB /* Resources */,
 			);
 			path = "architecture-patterns";
@@ -212,11 +235,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8431BE90292411BF0048396D /* VIPERRouter.swift in Sources */,
 				84E99444291990B20020F5E3 /* MVCViewController.swift in Sources */,
+				8431BE92292411D00048396D /* VIPERModuleAssembly.swift in Sources */,
+				8431BE8C2924118A0048396D /* VIPERPresenter.swift in Sources */,
 				848CA896292108C4003CEEAB /* MVPViewController.swift in Sources */,
 				848CA8A829228C3B003CEEAB /* MVVMViewController.swift in Sources */,
 				84E99440291990B20020F5E3 /* AppDelegate.swift in Sources */,
+				8431BE8E2924119A0048396D /* VIPERInteractor.swift in Sources */,
 				848CA893291FD2E3003CEEAB /* PincodeService.swift in Sources */,
+				8431BE8A2924117B0048396D /* VIPERViewController.swift in Sources */,
 				848CA8AA29228C51003CEEAB /* MVVMViewModelInput.swift in Sources */,
 				848CA8AC29228C5D003CEEAB /* MVVMModuleAssembly.swift in Sources */,
 				848CA898292108E0003CEEAB /* MVPPresenter.swift in Sources */,
@@ -368,7 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "architecture-patterns/Info.plist";
+				INFOPLIST_FILE = "architecture-patterns/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -395,7 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "architecture-patterns/Info.plist";
+				INFOPLIST_FILE = "architecture-patterns/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
